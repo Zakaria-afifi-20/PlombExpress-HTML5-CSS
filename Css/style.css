@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.header {
+    padding: 16px 20px;
+}
+
+* {
+    font-family: inter;
+}
+
+.logo {}
+
+.headerlogo {
+    font-size: larger;
+    align-items: center;
+}
+
+#logo {
+    border-radius: 10px;
+}
+
+#blueexpress {
+    color: #0866C2;
+}
+
+.headerlist {
+    display: none;
+    /* display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;*/
+}
+
+.headerlist a {
+    text-decoration: none;
+    color: black;
+}
+
+.headerlist a:hover {
+    border-bottom: 1px solid black;
+}
+
+#btndemender {
+    height: 44px;
+    width: 100%;
+    background-color: #FF6418;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    font-weight: bold;
+}
+
+#devisbtn {
+    color: white;
+    background-color: #FF6418;
+    height: 30px;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#servicebtn{
+    height: 30px;
+    width: 20%;
+    border: 2px solid #DCE5EC;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 10px;
+}
+#infoblue{
+    color: #0866C2;
+}
+
+.presentationdiv {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+}
+
+.presentation {
+    display: flex;
+}
+
+#presentationimg {
+    height: 50%;
+    width: 50%;
+    border-radius: 25px;
+}
+
+.engagement {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+}
+
+
+
+.solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#solutionimg {
+    height: 50%;
+    width: 50%;
+}
+
+#solutionicon {
+    height: 10%;
+    width: 10%;
+}
+
+.solutionsections {
+    display: flex;
+}
+
+.solutiondiv {
+    display: flex;
+    flex-direction: column;
+}
+#btnsolution{
+    height: 40px;
+    width: 100%;
+    border: 1px solid #DCE5EC;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+
+.service {
+    display: flex;
+}
+
+#serviceimg {
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+
+}
+
+.listeavantages {
+    display: flex;
+
+}
