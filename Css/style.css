@@ -7,6 +7,9 @@
 * {
     font-family: inter;
 }
+body{
+    margin: 0;
+}
 
 .logo {}
 
@@ -60,7 +63,7 @@
     font-weight: bold;
 }
 
-#servicebtn{
+#servicebtn {
     height: 30px;
     width: 20%;
     border: 2px solid #DCE5EC;
@@ -68,7 +71,8 @@
     background-color: transparent;
     border-radius: 10px;
 }
-#infoblue{
+
+#infoblue {
     color: #0866C2;
 }
 
@@ -103,11 +107,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
+
 }
 
 #solutionimg {
     height: 50%;
-    width: 50%;
+    width: 100%;
+    border-radius: 10px;
 }
 
 #solutionicon {
@@ -117,18 +124,24 @@
 
 .solutionsections {
     display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
 }
 
 .solutiondiv {
     display: flex;
     flex-direction: column;
+    border: 1px solid #C2D0DD;
+    border-radius: 10px;
 }
-#btnsolution{
+
+#btnsolution {
     height: 40px;
     width: 100%;
     border: 1px solid #DCE5EC;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bold;
 }
 
@@ -136,16 +149,64 @@
 
 .service {
     display: flex;
+    padding: 20px 80px;
+    background-color: #F3F7FA;
 }
 
 #serviceimg {
     width: 50%;
-    height: 50%;
+    height: 90%;
     border-radius: 25px;
-
 }
 
-.listeavantages {
-    display: flex;
 
+
+
+.divlisteavantages{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+footer {
+    background-color: #102A43;
+    color: #C2D0DD;
+    font-size: small;
+    padding: 50px;
+}
+
+.footerdiv {
+    display: flex;
+    justify-content: space-between;
+}
+#logofooter{
+     display: flex;
+ align-items: center;
+ gap: 3px;
+}
+.footerlogo{
+    display: flex;
+    flex-direction: column;
+}
+.footerlogo a b{
+    font-size: xx-large;
+    color: white;
+}
+.liste ul {
+    list-style: none;
+}
+
+#ulfirstch{
+    font-weight: bold;
+    color: white;
+
+}
+hr{
+    width: 95%;
+}
+.copyrghit{
+    display: flex;
+    justify-content: space-between;
 }
