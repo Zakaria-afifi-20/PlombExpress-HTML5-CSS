@@ -1,22 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
 .header {
     padding: 16px 20px;
 }
 
 * {
     font-family: inter;
+    text-decoration: none;
 }
-body{
+
+body {
     margin: 0;
 }
 
-
+.header {
+    display: flex;
+    justify-content: space-between;
+}
 
 .headerlogo {
     font-size: larger;
+    display: flex;
     align-items: center;
+    gap: 10px;
+
 }
+
+.headerlogo b {
+    color: black;
+}
+
 
 #logo {
     border-radius: 10px;
@@ -27,11 +41,14 @@ body{
 }
 
 .headerlist {
-    display: none;
-    /* display: flex;
-    justify-content: space-between;
+    /*  display: none;*/
+    display: flex;
+    list-style: none;
     gap: 2rem;
-    list-style: none;*/
+}
+
+#burgerbtn {
+    display: none;
 }
 
 .headerlist a {
@@ -45,12 +62,17 @@ body{
 
 #btndemender {
     height: 44px;
-    width: 100%;
+    width: 20%;
     background-color: #FF6418;
     border-radius: 15px;
     border: none;
     font-weight: bold;
     font-weight: bold;
+}
+
+.presentationheader {
+    background-color: #F3F7FA;
+    padding: 4rem 6.5rem 0;
 }
 
 #devisbtn {
@@ -76,38 +98,53 @@ body{
     color: #0866C2;
 }
 
+.presentation h2 {
+    font-size: 3.12rem;
+}
+
+.presentation p {
+    font-size: 1.8rem;
+    color: #486176;
+}
+
 .presentationdiv {
     display: flex;
     flex-direction: column;
-    height: 50%;
-    width: 50%;
+    padding-bottom: 50px;
 }
 
 .presentation {
     display: flex;
+    gap: 50px;
 }
 
 #presentationimg {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     border-radius: 25px;
 }
+
+
 
 .engagement {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    padding: 20px;
+    padding: 0 20px;
+    height: 62px;
 }
 
 
 
 .solution {
+    padding: 10px;
+    margin: 80px;
+}
+
+.solutiontxt {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 20px 0;
 
 }
 
@@ -120,13 +157,18 @@ body{
 #solutionicon {
     height: 10%;
     width: 10%;
+    padding: 10px 24px 0;
 }
 
 .solutionsections {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 24px;
+}
 
+.solutiondiv p,
+.solutiondiv b {
+    padding: 0 24px;
 }
 
 .solutiondiv {
@@ -134,17 +176,23 @@ body{
     flex-direction: column;
     border: 1px solid #C2D0DD;
     border-radius: 10px;
+
 }
 
 #btnsolution {
+    margin: 30px;
     height: 40px;
-    width: 100%;
+    width: 50%;
     border: 1px solid #DCE5EC;
     background-color: transparent;
     border-radius: 5px;
     font-weight: bold;
 }
 
+.btnsolution-div {
+    display: flex;
+    justify-content: center;
+}
 
 
 .service {
@@ -162,12 +210,10 @@ body{
 
 
 
-.divlisteavantages{
+.divlisteavantages {
     display: flex;
     flex-direction: row;
 }
-
-
 
 
 footer {
@@ -181,32 +227,136 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-#logofooter{
-     display: flex;
- align-items: center;
- gap: 3px;
+
+#logofooter {
+    display: flex;
+    align-items: center;
+    gap: 3px;
 }
-.footerlogo{
+
+.footerlogo {
     display: flex;
     flex-direction: column;
 }
-.footerlogo a b{
+
+.footerlogo a b {
     font-size: xx-large;
     color: white;
 }
+
 .liste ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-#ulfirstch{
+#ulfirstch {
     font-weight: bold;
     color: white;
 
 }
-hr{
+
+hr {
+    margin: 50px 0;
     width: 95%;
 }
-.copyrghit{
+
+.copyrghit {
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 375px) {
+    #burgerbtn {
+        display: block;
+    }
+
+    .headerlist {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #btndemender {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #devisbtn {
+        width: 100%;
+    }
+
+    #servicebtn {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .presentation {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .presentationheader {
+        background-color: #F3F7FA;
+        padding: 1rem 2rem 0;
+    }
+
+    .presentation h2 {
+        font-size: 2rem;
+    }
+
+    .presentation p {
+        font-size: 1rem;
+
+    }
+
+    .engagement {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+        height: 4rem;
+        gap: 1rem;
+    }
+
+    .solution {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .solutionsections {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footerdiv {
+        flex-direction: column;
+    }
+
+    .service {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #serviceimg {
+        width: 100%;
+        height: 90%;
+        border-radius: 25px;
+    }
+
+    .divlisteavantages {
+        flex-direction: column;
+    }
+
+
 }
