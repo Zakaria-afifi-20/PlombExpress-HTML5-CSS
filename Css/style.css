@@ -182,7 +182,7 @@ body {
 #btnsolution {
     margin: 30px;
     height: 40px;
-    width: 50%;
+    width: 60%;
     border: 1px solid #DCE5EC;
     background-color: transparent;
     border-radius: 5px;
@@ -207,14 +207,35 @@ body {
     border-radius: 25px;
 }
 
+.contactsection {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+}
 
+.infoentreprise {
+    padding: 100px 10px;
+    background-color: #f3621f;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
 
+.infoentreprise ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#contacttxt {
+    color: black;
+    font-size: 50px;
+}
 
 .divlisteavantages {
     display: flex;
     flex-direction: row;
 }
-
 
 footer {
     background-color: #102A43;
@@ -251,6 +272,11 @@ footer {
     gap: 10px;
 }
 
+.liste a {
+    text-decoration: none;
+    color: #C2D0DD;
+}
+
 #ulfirstch {
     font-weight: bold;
     color: white;
@@ -265,6 +291,58 @@ hr {
 .copyrghit {
     display: flex;
     justify-content: space-between;
+}
+
+
+.formulaire {
+    margin: 20px;
+    height: 100% ;
+    width: 50%;
+}
+
+.formhead h4 {
+    color: #034bff;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.infolab {
+    display: flex;
+    flex-direction: column;
+}
+
+.infolab input {
+    width: 800wh;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #E2E1E5;
+}
+
+.servicedemender {
+ height: 30px;
+ font-size: 15px;
+}
+
+#btnsinscrire {
+    border-radius: 10px;
+    width: 60%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    background-color: #FF6418;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+.buttoncontact{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 375px) {
@@ -356,7 +434,10 @@ hr {
 
     .divlisteavantages {
         flex-direction: column;
+        margin-top: 30px;
     }
 
-
+    .txtinservice {
+        order: -1;
+    }
 }
