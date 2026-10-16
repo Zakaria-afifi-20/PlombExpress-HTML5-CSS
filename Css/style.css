@@ -160,11 +160,14 @@ body {
     padding: 10px 24px 0;
 }
 
-.solutionsections {
+.solutionsections,
+.solutionsectionsB {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    margin: 10px;
 }
+
 
 .solutiondiv p,
 .solutiondiv b {
@@ -187,6 +190,7 @@ body {
     background-color: transparent;
     border-radius: 5px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .btnsolution-div {
@@ -194,6 +198,9 @@ body {
     justify-content: center;
 }
 
+.btnsolution-div a {
+    color: black;
+}
 
 .service {
     display: flex;
@@ -211,15 +218,24 @@ body {
     display: flex;
     justify-content: center;
     margin: 10px;
-    
+
 }
 
 .infoentreprise {
-    padding: 100px 10px;
-    background-color: #f3621f;
+    padding: 300px 10px 0 0;
+    background-image: url('../Assets/Images/imgservice2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 25px;
     font-size: 20px;
     font-weight: bold;
+    color: #c9c4c4;
+}
+
+.infoentreprise ul {
+    margin: 0 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .infoentreprise ul li {
@@ -228,8 +244,8 @@ body {
 }
 
 #contacttxt {
-    color: black;
-    font-size: 50px;
+    color: rgb(248, 0, 0);
+    font-size: 40px;
 }
 
 .divlisteavantages {
@@ -296,7 +312,7 @@ hr {
 
 .formulaire {
     margin: 20px;
-    height: 100% ;
+    height: 100%;
     width: 50%;
 }
 
@@ -324,8 +340,8 @@ hr {
 }
 
 .servicedemender {
- height: 30px;
- font-size: 15px;
+    height: 30px;
+    font-size: 15px;
 }
 
 #btnsinscrire {
@@ -338,11 +354,21 @@ hr {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
-.buttoncontact{
+
+.buttoncontact {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.aboutpage {
+   background-color: rgba(45, 44, 44, 0.6);
+    border-radius: 25px;
+    margin: 50px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 375px) {
@@ -412,7 +438,8 @@ hr {
         margin: 5px;
     }
 
-    .solutionsections {
+    .solutionsections,
+    .solutionsectionsB {
         flex-direction: column;
         gap: 24px;
     }
@@ -432,6 +459,10 @@ hr {
         border-radius: 25px;
     }
 
+    .btnsolution-div a {
+        color: black;
+    }
+
     .divlisteavantages {
         flex-direction: column;
         margin-top: 30px;
@@ -440,4 +471,35 @@ hr {
     .txtinservice {
         order: -1;
     }
+
+    .contactsection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoentreprise {
+        padding: 10px 10px;
+        background-image: url('../Assets/Images/imgservice2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+        font-size: 70%;
+        font-weight: bold;
+    }
+
+    #contacttxt {
+        color: rgb(246, 0, 0);
+        font-size: 30px;
+    }
+
+    .formulaire {
+        margin: 20px;
+        height: 100%;
+        width: 90%;
+    }
+
+    .aboutpage {
+        margin: 20px;
+    }
+
 }
