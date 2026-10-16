@@ -12,7 +12,7 @@ Bienvenue sur le dépôt du projet **Plomb'Express**, un site web vitrine modern
 
 ---
 
-## 📄 Structure du Site
+## Structure du Site
 
 Le site est composé de quatre pages principales reliées par une barre de navigation commune :
 
@@ -24,7 +24,7 @@ Le site est composé de quatre pages principales reliées par une barre de navig
 
 ---
 
-## 📱 Fonctionnalités et Responsive Design
+## Fonctionnalités et Responsive Design
 
 - **Approche Mobile-First** : Conçu pour s'adapter parfaitement aux smartphones (testé dès 375px) et aux écrans d'ordinateurs (desktop 1280px).
 - **Accessibilité** : Respect des bonnes pratiques (textes alternatifs, labels de formulaires, contrastes soignés et navigation au clavier).
